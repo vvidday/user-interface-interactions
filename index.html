@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface Interactions</title>
+</head>
+<body>
+    <header><h1>Dynamic User Interface Interactions</h1></header>
+    <div id="nav-wrapper">
+    <div id="main-nav">
+        <button id="dropdown-nav-button">Dropdown</button>
+        <button id="mobilemenu-nav-button">Mobile Menu</button>
+        <button id="imageslider-nav-button">Image Slider</button>
+    </div>
+</div>
+
+    <section id="dropdown">
+    <div class="dropdown-input-container">
+        <h2 class="center">Dropdowns - works with custom CSS!</h2>
+        <h2>Add your CSS here!</h2>
+        <div id="dropdown-hover">
+            <label for="hover-properties">.trigger:hover{</label>
+            <textarea id="hover-properties" cols="10" rows="6">cursor: pointer;</textarea>
+            <span>}</span>
+        </div>
+
+        <div id="dropdown-content">
+            <label for="content-properties">.content{</label>
+            <textarea id="content-properties" cols="10" rows="6">transition: max-height 0.2s ease-in;</textarea>
+            <span>}</span>
+            <p>Note: The dropdown works by altering the max-height property.</p>
+        </div>
+        <div id="dropdown-slider-div">
+            <span>Hover</span>
+            <input type="range" min="0" max="1" id="dropdown-slider">
+            <span>Click</span>
+        </div>
+        <div class="button-div"><button id="apply-css-button">Apply CSS</button></div>
+    </div>
+
+    <div class="dropdown-container">
+        <h2>Demo</h2>
+        <button class="dropdown-trigger">
+            This is the dropdown trigger!
+        </button>
+        <div class="dropdown-content">
+            This is the dropdown content!
+        </div>
+    </div>
+</section>
+
+<section id="mobile-menu" class ="absolute invisible">
+    <h2 class ="center">View in Mobile!</h2>
+    <button id="mobile-menu-button">
+    </button>
+
+    <div id="mobile-nav-container">
+        <nav id="mobile-nav">
+            <div id="ul-links">
+                <div class="link-item">Home</div>
+                <div class="link-item">Forums</div>
+                <div class="link-item">Contact</div>
+                <div class="link-item">FAQ</div>
+                <div class="link-item">Purchase</div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+
+<section class="invisible absolute" id="image-slider">
+<h2 class="center">Modular Image Slider - Can be created with just an array of any number of images!</h2>
+<div id="container-div">
+    <div id="main-div">
+        <button id="move-back-button"><</button>
+        <div class="image-div" id="image-div"> </div>
+        <button id="move-forward-button">></button>
+    </div>
+    <div id="buttons">
+    </div>
+</div>
+
+
+</section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
