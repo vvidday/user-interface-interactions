@@ -1,0 +1,263 @@
+:root {
+  font-size: 10px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: beige;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+#nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#main-nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid gray;
+  background-color: khaki;
+}
+
+#main-nav > button {
+  font-size: 2.5rem;
+  background-color: transparent;
+  border: 2px solid khaki;
+  margin: 2rem;
+}
+
+#main-nav > button:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  border-bottom: 2px solid;
+}
+
+.nav-active {
+  transform: translateY(-5px);
+  border-bottom: 2px solid !important;
+  font-weight: bold;
+}
+
+.dropdown-input-container {
+  margin: 2rem;
+  border: 2px solid;
+  padding: 2rem;
+}
+
+.dropdown-input-container > * {
+  margin: 2rem 0;
+}
+
+textarea {
+  font-size: 2rem;
+}
+
+.button-div {
+  text-align: center;
+}
+
+#apply-css-button {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  border: transparent;
+  background-color: transparent;
+  border-bottom: 2px solid;
+}
+
+#apply-css-button:hover {
+  transform: translateY(-5px);
+}
+
+#dropdown-hover,
+#dropdown-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+.dropdown-container {
+  text-align: center;
+}
+
+.dropdown-trigger,
+.dropdown-content {
+  font-size: 2.5rem;
+}
+
+.dropdown-content {
+  margin-top: 1rem;
+}
+
+#dropdown-slider-div {
+  display: flex;
+  align-items: center;
+}
+#dropdown-slider {
+  width: 3rem;
+  margin: 0rem 1rem;
+}
+
+.invisible {
+  visibility: hidden;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#mobile-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#mobile-menu-button:hover {
+  cursor: pointer;
+  background-color: rgba(35, 35, 35, 0.2);
+}
+
+#mobile-nav-container {
+  left: 50%;
+  transform: translateX(-50%);
+  transition: max-height 0.2s ease-in;
+}
+
+#mobile-nav {
+  padding: 5rem;
+  background-color: beige;
+}
+
+#ul-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-item {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.link-item:hover {
+  transform: translateY(-5px);
+  border-bottom: 2px solid;
+  cursor: pointer;
+}
+
+#container-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-div {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr;
+  border: 5px solid;
+  margin-top: 5rem;
+}
+
+#image-div {
+  grid-column: 1 / 4;
+  grid-row-start: 1;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#move-back-button {
+  grid-column: 1 / 2;
+  grid-row-start: 1;
+  width: 100%;
+}
+
+#move-forward-button {
+  grid-column: 3 / 4;
+  grid-row-start: 1;
+  width: 100%;
+}
+
+#move-back-button,
+#move-forward-button {
+  background-color: transparent;
+  opacity: 0;
+  font-size: 8rem;
+  z-index: 1;
+  border: none;
+}
+
+#move-forward-button:hover,
+#move-back-button:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+  opacity: 1;
+  font-size: 8rem;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-buttons {
+  color: transparent;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.image-buttons:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.9);
+}
+
+.image-buttons-active {
+  border: 1px solid black;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: transparent;
+  border-radius: 50%;
+}
+
+.image-buttons,
+.image-buttons-active {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  #dropdown-hover,
+  #dropdown-content {
+    max-width: 100%;
+  }
+  #main-div {
+    width: 90%;
+  }
+  #main-nav {
+    width: 100%;
+  }
+  #main-nav > button {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}

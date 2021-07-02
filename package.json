@@ -1,0 +1,26 @@
+{
+  "name": "user-interface-interactions",
+  "version": "1.0.0",
+  "description": "Dynamic User Interface Interactions section from The Odin Project (Javascript path)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvidday/user-interface-interactions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvidday/user-interface-interactions/issues"
+  },
+  "homepage": "https://github.com/vvidday/user-interface-interactions#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
